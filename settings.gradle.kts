@@ -19,6 +19,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "compose_screens"
+rootProject.name = "compose_lab"
 include(":app")
  
