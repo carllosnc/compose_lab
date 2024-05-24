@@ -30,7 +30,7 @@ fun HomePage(
     topBar = {
       TopAppBar(
         title = {
-          Text("Compose Screens")
+          Text("Compose Lab")
         }
       )
     },
