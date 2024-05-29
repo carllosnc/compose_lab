@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
          ) {
             NavHost(
                navController = navController,
-               startDestination = Routes.REACTIVITY_SCREEN,
+               startDestination = Routes.HOME,
                enterTransition = {
                   slideIntoContainer(
                      AnimatedContentTransitionScope.SlideDirection.Start,
