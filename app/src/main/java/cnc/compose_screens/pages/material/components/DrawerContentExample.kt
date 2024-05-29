@@ -21,68 +21,68 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun DrawerContentExample() {
-  Column(
-    verticalArrangement = Arrangement.spacedBy(2.dp),
-    modifier = Modifier
-      .padding(20.dp)
-  ) {
-    NavigationDrawerItem(
-      icon = {
-        Icon(
-          imageVector = Icons.Outlined.Home,
-          contentDescription = "Home",
-        )
-      },
-      label = { Text("Home") },
-      selected = true,
-      onClick = { /*TODO*/ }
-    )
+   Column(
+      verticalArrangement = Arrangement.spacedBy(2.dp),
+      modifier = Modifier
+         .padding(20.dp)
+   ) {
+      NavigationDrawerItem(
+         icon = {
+            Icon(
+               imageVector = Icons.Outlined.Home,
+               contentDescription = "Home",
+            )
+         },
+         label = { Text("Home") },
+         selected = true,
+         onClick = { /*TODO*/ }
+      )
 
-    NavigationDrawerItem(
-      icon = {
-        Icon(
-          imageVector = Icons.Outlined.Search,
-          contentDescription = "Search",
-        )
-      },
-      label = { Text("Search") },
-      selected = false,
-      onClick = { /*TODO*/ }
-    )
+      NavigationDrawerItem(
+         icon = {
+            Icon(
+               imageVector = Icons.Outlined.Search,
+               contentDescription = "Search",
+            )
+         },
+         label = { Text("Search") },
+         selected = false,
+         onClick = { /*TODO*/ }
+      )
 
-    NavigationDrawerItem(
-      icon = {
-        Icon(
-          imageVector = Icons.Outlined.Settings,
-          contentDescription = "Settings",
-        )
-      },
-      label = { Text("Settings") },
-      selected = false,
-      onClick = { /*TODO*/ }
-    )
+      NavigationDrawerItem(
+         icon = {
+            Icon(
+               imageVector = Icons.Outlined.Settings,
+               contentDescription = "Settings",
+            )
+         },
+         label = { Text("Settings") },
+         selected = false,
+         onClick = { /*TODO*/ }
+      )
 
-    NavigationDrawerItem(
-      icon = {
-        BadgedBox(
-          badge = {
-            Badge(
-              modifier = Modifier
-                .width(10.dp)
-                .height(10.dp),
+      NavigationDrawerItem(
+         icon = {
+            BadgedBox(
+               badge = {
+                  Badge(
+                     modifier = Modifier
+                       .width(10.dp)
+                       .height(10.dp),
+                  ) {
+                  }
+               }
             ) {
+               Icon(
+                  imageVector = Icons.Outlined.ShoppingCart,
+                  contentDescription = "Products",
+               )
             }
-          }
-        ) {
-          Icon(
-            imageVector = Icons.Outlined.ShoppingCart,
-            contentDescription = "Products",
-          )
-        }
-      },
-      label = { Text("Products") },
-      selected = false,
-      onClick = { /*TODO*/ }
-    )
-  }
+         },
+         label = { Text("Products") },
+         selected = false,
+         onClick = { /*TODO*/ }
+      )
+   }
 }

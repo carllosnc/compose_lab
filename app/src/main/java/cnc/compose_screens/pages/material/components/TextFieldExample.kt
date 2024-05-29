@@ -21,52 +21,52 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun TextFieldExample() {
-  var outlinedText by rememberSaveable { mutableStateOf("") }
-  var filledText by rememberSaveable { mutableStateOf("") }
+   var outlinedText by rememberSaveable { mutableStateOf("") }
+   var filledText by rememberSaveable { mutableStateOf("") }
 
-  Column(
-    modifier = Modifier
-      .fillMaxWidth()
-      .padding(
-        start = 20.dp,
-        end = 20.dp
-      ),
-    verticalArrangement = Arrangement.spacedBy(
-      space = 20.dp
-    )
-  ) {
-    OutlinedTextField(
-      supportingText = {
-        Text("Supporting text - Reference site about Lorem Ipsum, giving information on its origins, as well as a random")
-      },
-      leadingIcon = {
-        Icon(
-          imageVector = Icons.Outlined.Lock,
-          contentDescription = "Search",
-        )
-      },
-      modifier = Modifier.fillMaxWidth(),
-      value = outlinedText,
-      onValueChange = { outlinedText = it },
-      label = { Text("Outlined TextField") },
-      singleLine = true
-    )
-    TextField(
-      supportingText = {
-        Text("Supporting text - Reference site about Lorem Ipsum, giving information on its origins, as well as a random")
-      },
-      leadingIcon = {
-        Icon(
-          imageVector = Icons.Outlined.AcUnit,
-          contentDescription = "Search",
-        )
-      },
+   Column(
       modifier = Modifier
-        .fillMaxWidth(),
-      value = filledText,
-      onValueChange = { filledText = it },
-      label = { Text("Filled TextField") },
-      singleLine = true
-    )
-  }
+        .fillMaxWidth()
+        .padding(
+          start = 20.dp,
+          end = 20.dp
+        ),
+      verticalArrangement = Arrangement.spacedBy(
+         space = 20.dp
+      )
+   ) {
+      OutlinedTextField(
+         supportingText = {
+            Text("Supporting text - Reference site about Lorem Ipsum, giving information on its origins, as well as a random")
+         },
+         leadingIcon = {
+            Icon(
+               imageVector = Icons.Outlined.Lock,
+               contentDescription = "Search",
+            )
+         },
+         modifier = Modifier.fillMaxWidth(),
+         value = outlinedText,
+         onValueChange = { outlinedText = it },
+         label = { Text("Outlined TextField") },
+         singleLine = true
+      )
+      TextField(
+         supportingText = {
+            Text("Supporting text - Reference site about Lorem Ipsum, giving information on its origins, as well as a random")
+         },
+         leadingIcon = {
+            Icon(
+               imageVector = Icons.Outlined.AcUnit,
+               contentDescription = "Search",
+            )
+         },
+         modifier = Modifier
+            .fillMaxWidth(),
+         value = filledText,
+         onValueChange = { filledText = it },
+         label = { Text("Filled TextField") },
+         singleLine = true
+      )
+   }
 }

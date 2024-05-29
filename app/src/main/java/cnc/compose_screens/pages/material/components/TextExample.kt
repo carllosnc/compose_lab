@@ -14,33 +14,33 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TextExample() {
-  Column(
-    modifier = Modifier
-      .fillMaxWidth()
-      .padding(
-        start = 20.dp,
-        end = 20.dp
-      ),
-    verticalArrangement = Arrangement.spacedBy(
-      space = 2.dp
-    )
-  ) {
-    Text(
-      "Example of text",
-      fontSize = 30.sp,
-      fontWeight = FontWeight.Light
-    )
-    Text(
-      "Example of text",
-      fontSize = 25.sp,
-      fontWeight = FontWeight.Medium,
-      color = Color.Red
-    )
-    Text(
-      "Example of text",
-      fontSize = 20.sp,
-      fontWeight = FontWeight.Black,
-      color = Color.Blue
-    )
-  }
+   Column(
+      modifier = Modifier
+        .fillMaxWidth()
+        .padding(
+          start = 20.dp,
+          end = 20.dp
+        ),
+      verticalArrangement = Arrangement.spacedBy(
+         space = 2.dp
+      )
+   ) {
+      Text(
+         "Example of text",
+         fontSize = 30.sp,
+         fontWeight = FontWeight.Light
+      )
+      Text(
+         "Example of text",
+         fontSize = 25.sp,
+         fontWeight = FontWeight.Medium,
+         color = Color.Red
+      )
+      Text(
+         "Example of text",
+         fontSize = 20.sp,
+         fontWeight = FontWeight.Black,
+         color = Color.Blue
+      )
+   }
 }

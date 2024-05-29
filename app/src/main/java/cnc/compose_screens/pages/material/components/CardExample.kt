@@ -19,67 +19,67 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun CardExample() {
-  Column(
-    verticalArrangement = Arrangement.spacedBy(
-      space = 10.dp
-    ),
-    modifier = Modifier
-      .padding(
-        start = 20.dp,
-        end = 20.dp
-      )
-      .fillMaxWidth(),
-  ) {
-    Card(
+   Column(
+      verticalArrangement = Arrangement.spacedBy(
+         space = 10.dp
+      ),
       modifier = Modifier
-        .fillMaxWidth()
-        .clickable(onClick = { /*TODO*/ }),
-      shape = RoundedCornerShape(10.dp),
-      onClick = { /*TODO*/ }
-    ) {
-      Column(
-        modifier = Modifier
-          .padding(10.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp)
+        .padding(
+          start = 20.dp,
+          end = 20.dp
+        )
+        .fillMaxWidth(),
+   ) {
+      Card(
+         modifier = Modifier
+           .fillMaxWidth()
+           .clickable(onClick = { /*TODO*/ }),
+         shape = RoundedCornerShape(10.dp),
+         onClick = { /*TODO*/ }
       ) {
-        Text(
-          text = "Card Example",
-          fontSize = 16.sp,
-          fontWeight = FontWeight.Bold
-        )
-        Text(
-          text = "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
-          fontSize = 14.sp,
-        )
+         Column(
+            modifier = Modifier
+               .padding(10.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+         ) {
+            Text(
+               text = "Card Example",
+               fontSize = 16.sp,
+               fontWeight = FontWeight.Bold
+            )
+            Text(
+               text = "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
+               fontSize = 14.sp,
+            )
+         }
       }
-    }
 
-    OutlinedCard(
-      modifier = Modifier
-        .fillMaxWidth()
-        .clickable(onClick = { /*TODO*/ }),
-      shape = RoundedCornerShape(10.dp),
-      onClick = { /*TODO*/ },
-      colors = CardDefaults.outlinedCardColors(
-        containerColor = Color(0xFFF5F5F5),
-        contentColor = Color.Black
-      )
-    ) {
-      Column(
-        modifier = Modifier
-          .padding(10.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp)
+      OutlinedCard(
+         modifier = Modifier
+           .fillMaxWidth()
+           .clickable(onClick = { /*TODO*/ }),
+         shape = RoundedCornerShape(10.dp),
+         onClick = { /*TODO*/ },
+         colors = CardDefaults.outlinedCardColors(
+            containerColor = Color(0xFFF5F5F5),
+            contentColor = Color.Black
+         )
       ) {
-        Text(
-          text = "Card Example",
-          fontSize = 16.sp,
-          fontWeight = FontWeight.Bold
-        )
-        Text(
-          text = "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
-          fontSize = 14.sp,
-        )
+         Column(
+            modifier = Modifier
+               .padding(10.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+         ) {
+            Text(
+               text = "Card Example",
+               fontSize = 16.sp,
+               fontWeight = FontWeight.Bold
+            )
+            Text(
+               text = "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
+               fontSize = 14.sp,
+            )
+         }
       }
-    }
-  }
+   }
 }

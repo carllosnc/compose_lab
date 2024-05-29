@@ -40,86 +40,86 @@ import kotlinx.coroutines.launch
 
 @Composable
 @Preview(
-  showBackground = true,
-  showSystemUi = true,
-  device = androidx.compose.ui.tooling.preview.Devices.PIXEL,
+   showBackground = true,
+   showSystemUi = true,
+   device = androidx.compose.ui.tooling.preview.Devices.PIXEL,
 )
 fun MaterialPage(
-        navController: NavController = rememberNavController()
+   navController: NavController = rememberNavController()
 ) {
-  val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
-  val scope = rememberCoroutineScope()
+   val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
+   val scope = rememberCoroutineScope()
 
-  fun openDrawer() {
-    scope.launch {
-      drawerState.open()
-    }
-  }
+   fun openDrawer() {
+      scope.launch {
+         drawerState.open()
+      }
+   }
 
-  ModalNavigationDrawer(
-    drawerState = drawerState,
-    modifier = Modifier.background(
-      color = Color.Red
-    ),
-    drawerContent = {
-      ModalDrawerSheet {
-        DrawerContentExample()
-      }
-    },
-  ) {
-    Scaffold(
-      floatingActionButton = {
-        FloatingButtonExample()
+   ModalNavigationDrawer(
+      drawerState = drawerState,
+      modifier = Modifier.background(
+         color = Color.Red
+      ),
+      drawerContent = {
+         ModalDrawerSheet {
+            DrawerContentExample()
+         }
       },
-      topBar = {
-        TopBarExample(
-          openDrawer = { openDrawer() }
-        )
-      },
-      content = { innerPadding ->
-        Box(
-          modifier = Modifier
-            .verticalScroll(rememberScrollState())
-            .padding(innerPadding)
-            .fillMaxSize()
-        ) {
-          Column(
-            verticalArrangement = Arrangement.spacedBy(
-              space = 20.dp
-            ),
-            modifier = Modifier
-              .padding(
-                bottom = 120.dp
-              )
-              .fillMaxSize()
-          ) {
-            TextExample()
-            HorizontalDivider()
-            ButtonsExample()
-            HorizontalDivider()
-            IconButtonsExample()
-            HorizontalDivider()
-            TextFieldExample()
-            HorizontalDivider()
-            ListItemExample()
-            HorizontalDivider()
-            CardExample()
-            HorizontalDivider()
-            LoadingIndicatorsExample()
-            HorizontalDivider()
-            AssistChipsExample()
-            HorizontalDivider()
-            SuggestionChipsExample()
-            HorizontalDivider()
-            FilterChipsExample()
-            HorizontalDivider()
-          }
-        }
-      },
-      bottomBar = {
-        BottomBarExample()
-      }
-    )
-  }
+   ) {
+      Scaffold(
+         floatingActionButton = {
+            FloatingButtonExample()
+         },
+         topBar = {
+            TopBarExample(
+               openDrawer = { openDrawer() }
+            )
+         },
+         content = { innerPadding ->
+            Box(
+               modifier = Modifier
+                 .verticalScroll(rememberScrollState())
+                 .padding(innerPadding)
+                 .fillMaxSize()
+            ) {
+               Column(
+                  verticalArrangement = Arrangement.spacedBy(
+                     space = 20.dp
+                  ),
+                  modifier = Modifier
+                    .padding(
+                      bottom = 120.dp
+                    )
+                    .fillMaxSize()
+               ) {
+                  TextExample()
+                  HorizontalDivider()
+                  ButtonsExample()
+                  HorizontalDivider()
+                  IconButtonsExample()
+                  HorizontalDivider()
+                  TextFieldExample()
+                  HorizontalDivider()
+                  ListItemExample()
+                  HorizontalDivider()
+                  CardExample()
+                  HorizontalDivider()
+                  LoadingIndicatorsExample()
+                  HorizontalDivider()
+                  AssistChipsExample()
+                  HorizontalDivider()
+                  SuggestionChipsExample()
+                  HorizontalDivider()
+                  FilterChipsExample()
+                  HorizontalDivider()
+               }
+            }
+         },
+         bottomBar = {
+            BottomBarExample()
+         }
+      )
+   }
 }
 

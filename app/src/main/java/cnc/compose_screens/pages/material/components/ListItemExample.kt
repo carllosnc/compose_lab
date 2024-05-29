@@ -16,48 +16,48 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun ListItemExample() {
-  Column(
-    modifier = Modifier
-      .fillMaxWidth(),
-  ) {
-    ListItem(
+   Column(
       modifier = Modifier
-        .fillMaxWidth()
-        .clickable(onClick = { /*TODO*/ }),
-      headlineContent = {
-        Text("List item Example")
-      },
-      overlineContent = {
-        Text("Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.")
-      },
-      leadingContent = {
-        FilledIconButton(onClick = { /*TODO*/ }) {
-          Icon(
-            imageVector = Icons.Outlined.AccountBalanceWallet,
-            contentDescription = "Back",
-          )
-        }
-      },
-    )
+         .fillMaxWidth(),
+   ) {
+      ListItem(
+         modifier = Modifier
+           .fillMaxWidth()
+           .clickable(onClick = { /*TODO*/ }),
+         headlineContent = {
+            Text("List item Example")
+         },
+         overlineContent = {
+            Text("Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.")
+         },
+         leadingContent = {
+            FilledIconButton(onClick = { /*TODO*/ }) {
+               Icon(
+                  imageVector = Icons.Outlined.AccountBalanceWallet,
+                  contentDescription = "Back",
+               )
+            }
+         },
+      )
 
-    ListItem(
-      modifier = Modifier
-        .fillMaxWidth()
-        .clickable(onClick = { /*TODO*/ }),
-      headlineContent = {
-        Text("List item Example")
-      },
-      supportingContent = {
-        Text("Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.")
-      },
-      leadingContent = {
-        OutlinedIconButton(onClick = { /*TODO*/ }) {
-          Icon(
-            imageVector = Icons.Outlined.AirportShuttle,
-            contentDescription = "Back",
-          )
-        }
-      },
-    )
-  }
+      ListItem(
+         modifier = Modifier
+           .fillMaxWidth()
+           .clickable(onClick = { /*TODO*/ }),
+         headlineContent = {
+            Text("List item Example")
+         },
+         supportingContent = {
+            Text("Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.")
+         },
+         leadingContent = {
+            OutlinedIconButton(onClick = { /*TODO*/ }) {
+               Icon(
+                  imageVector = Icons.Outlined.AirportShuttle,
+                  contentDescription = "Back",
+               )
+            }
+         },
+      )
+   }
 }

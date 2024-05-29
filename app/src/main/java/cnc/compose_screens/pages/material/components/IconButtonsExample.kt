@@ -22,40 +22,40 @@ import androidx.compose.ui.unit.dp
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun IconButtonsExample() {
-  FlowRow(
-    modifier = Modifier
-      .fillMaxWidth()
-      .padding(
-        start = 20.dp,
-        end = 20.dp
-      ),
-    horizontalArrangement = Arrangement.spacedBy(
-      space = 5.dp
-    )
-  ) {
-    IconButton(onClick = { /*TODO*/ }) {
-      Icon(
-        imageVector = Icons.Default.Translate,
-        contentDescription = "Back",
+   FlowRow(
+      modifier = Modifier
+        .fillMaxWidth()
+        .padding(
+          start = 20.dp,
+          end = 20.dp
+        ),
+      horizontalArrangement = Arrangement.spacedBy(
+         space = 5.dp
       )
-    }
-    FilledIconButton(onClick = { /*TODO*/ }) {
-      Icon(
-        imageVector = Icons.Default.Search,
-        contentDescription = "Back",
-      )
-    }
-    OutlinedIconButton(onClick = { /*TODO*/ }) {
-      Icon(
-        imageVector = Icons.Default.WorkspacePremium,
-        contentDescription = "Back",
-      )
-    }
-    FilledTonalIconButton(onClick = { /*TODO*/ }) {
-      Icon(
-        imageVector = Icons.Default.Blender,
-        contentDescription = "Back",
-      )
-    }
-  }
+   ) {
+      IconButton(onClick = { /*TODO*/ }) {
+         Icon(
+            imageVector = Icons.Default.Translate,
+            contentDescription = "Back",
+         )
+      }
+      FilledIconButton(onClick = { /*TODO*/ }) {
+         Icon(
+            imageVector = Icons.Default.Search,
+            contentDescription = "Back",
+         )
+      }
+      OutlinedIconButton(onClick = { /*TODO*/ }) {
+         Icon(
+            imageVector = Icons.Default.WorkspacePremium,
+            contentDescription = "Back",
+         )
+      }
+      FilledTonalIconButton(onClick = { /*TODO*/ }) {
+         Icon(
+            imageVector = Icons.Default.Blender,
+            contentDescription = "Back",
+         )
+      }
+   }
 }

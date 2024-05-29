@@ -24,71 +24,71 @@ import androidx.compose.ui.unit.dp
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun ButtonsExample() {
-  FlowRow(
-    modifier = Modifier
-      .fillMaxWidth()
-      .padding(
-        start = 20.dp,
-        end = 20.dp
-      ),
-    horizontalArrangement = Arrangement.spacedBy(
-      space = 5.dp
-    )
-  ) {
-    Button(onClick = { /*TODO*/ }) {
-      Text("Button")
-    }
-    FilledTonalButton(onClick = { /*TODO*/ }) {
-      Text("Filled Tonal Button")
-    }
-    OutlinedButton(onClick = { /*TODO*/ }) {
-      Text("Outlined Button")
-    }
-    TextButton(onClick = { /*TODO*/ }) {
-      Text("Text Button")
-    }
-    Button(onClick = { /*TODO*/ }) {
-      Icon(
-        imageVector = Icons.Default.Add,
-        contentDescription = "Add",
-      )
-      Text("Button")
-    }
-    FilledTonalButton(onClick = { /*TODO*/ }) {
-      Icon(
-        imageVector = Icons.Default.Star,
-        contentDescription = "Add",
-      )
-      Spacer(modifier = Modifier.width(8.dp))
-      Text("Filled Tonal Button")
-    }
-    OutlinedButton(onClick = { /*TODO*/ }) {
-      Text("Outlined Button")
-      Spacer(modifier = Modifier.width(8.dp))
-      Icon(
-        imageVector = Icons.Default.Add,
-        contentDescription = "Add",
-      )
-    }
-    TextButton(onClick = { /*TODO*/ }) {
-      Icon(
-        imageVector = Icons.Default.Favorite,
-        contentDescription = "Add",
-      )
-      Spacer(modifier = Modifier.width(8.dp))
-      Text("Text Button")
-      Spacer(modifier = Modifier.width(8.dp))
-      Icon(
-        imageVector = Icons.Default.Favorite,
-        contentDescription = "Add",
-      )
-    }
-    Button(
+   FlowRow(
       modifier = Modifier
-        .fillMaxWidth(),
-      onClick = { /*TODO*/ }
-    ) {
-      Text("Button")
-    }
-  }
+        .fillMaxWidth()
+        .padding(
+          start = 20.dp,
+          end = 20.dp
+        ),
+      horizontalArrangement = Arrangement.spacedBy(
+         space = 5.dp
+      )
+   ) {
+      Button(onClick = { /*TODO*/ }) {
+         Text("Button")
+      }
+      FilledTonalButton(onClick = { /*TODO*/ }) {
+         Text("Filled Tonal Button")
+      }
+      OutlinedButton(onClick = { /*TODO*/ }) {
+         Text("Outlined Button")
+      }
+      TextButton(onClick = { /*TODO*/ }) {
+         Text("Text Button")
+      }
+      Button(onClick = { /*TODO*/ }) {
+         Icon(
+            imageVector = Icons.Default.Add,
+            contentDescription = "Add",
+         )
+         Text("Button")
+      }
+      FilledTonalButton(onClick = { /*TODO*/ }) {
+         Icon(
+            imageVector = Icons.Default.Star,
+            contentDescription = "Add",
+         )
+         Spacer(modifier = Modifier.width(8.dp))
+         Text("Filled Tonal Button")
+      }
+      OutlinedButton(onClick = { /*TODO*/ }) {
+         Text("Outlined Button")
+         Spacer(modifier = Modifier.width(8.dp))
+         Icon(
+            imageVector = Icons.Default.Add,
+            contentDescription = "Add",
+         )
+      }
+      TextButton(onClick = { /*TODO*/ }) {
+         Icon(
+            imageVector = Icons.Default.Favorite,
+            contentDescription = "Add",
+         )
+         Spacer(modifier = Modifier.width(8.dp))
+         Text("Text Button")
+         Spacer(modifier = Modifier.width(8.dp))
+         Icon(
+            imageVector = Icons.Default.Favorite,
+            contentDescription = "Add",
+         )
+      }
+      Button(
+         modifier = Modifier
+            .fillMaxWidth(),
+         onClick = { /*TODO*/ }
+      ) {
+         Text("Button")
+      }
+   }
 }

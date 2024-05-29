@@ -31,149 +31,149 @@ import androidx.compose.ui.unit.dp
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun AssistChipsExample() {
-  FlowRow(
-    horizontalArrangement = Arrangement.spacedBy(8.dp),
-    modifier = Modifier
-      .fillMaxWidth()
-      .padding(
-        start = 20.dp,
-        end = 20.dp
-      ),
-  ) {
-    AssistChip(
-      onClick = { /*TODO*/ }, label = {
-        Icon(
-          modifier = Modifier
-            .width(18.dp)
-            .height(18.dp),
-          imageVector = Icons.Default.Favorite,
-          contentDescription = "Favorite",
-        )
-        Spacer(modifier = Modifier.width(8.dp))
-        Text("Assist Chip")
-      }
-    )
+   FlowRow(
+      horizontalArrangement = Arrangement.spacedBy(8.dp),
+      modifier = Modifier
+        .fillMaxWidth()
+        .padding(
+          start = 20.dp,
+          end = 20.dp
+        ),
+   ) {
+      AssistChip(
+         onClick = { /*TODO*/ }, label = {
+            Icon(
+               modifier = Modifier
+                 .width(18.dp)
+                 .height(18.dp),
+               imageVector = Icons.Default.Favorite,
+               contentDescription = "Favorite",
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Text("Assist Chip")
+         }
+      )
 
-    ElevatedAssistChip(
-      onClick = { /*TODO*/ }, label = {
-        Icon(
-          modifier = Modifier
-            .width(18.dp)
-            .height(18.dp),
-          imageVector = Icons.Default.Favorite,
-          contentDescription = "Favorite",
-        )
-        Spacer(modifier = Modifier.width(8.dp))
-        Text("Elevated Assist Chip")
-      }
-    )
-  }
+      ElevatedAssistChip(
+         onClick = { /*TODO*/ }, label = {
+            Icon(
+               modifier = Modifier
+                 .width(18.dp)
+                 .height(18.dp),
+               imageVector = Icons.Default.Favorite,
+               contentDescription = "Favorite",
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Text("Elevated Assist Chip")
+         }
+      )
+   }
 }
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun SuggestionChipsExample() {
-  FlowRow(
-    horizontalArrangement = Arrangement.spacedBy(8.dp),
-    modifier = Modifier
-      .fillMaxWidth()
-      .padding(
-        start = 20.dp,
-        end = 20.dp
-      ),
-  ) {
-    SuggestionChip(onClick = { /*TODO*/ }, label = {
-      Icon(
-        modifier = Modifier
-          .width(18.dp)
-          .height(18.dp),
-        imageVector = Icons.Default.Favorite,
-        contentDescription = "Favorite",
-      )
-      Spacer(modifier = Modifier.width(8.dp))
-      Text("Suggestion Chip")
-    })
+   FlowRow(
+      horizontalArrangement = Arrangement.spacedBy(8.dp),
+      modifier = Modifier
+        .fillMaxWidth()
+        .padding(
+          start = 20.dp,
+          end = 20.dp
+        ),
+   ) {
+      SuggestionChip(onClick = { /*TODO*/ }, label = {
+         Icon(
+            modifier = Modifier
+              .width(18.dp)
+              .height(18.dp),
+            imageVector = Icons.Default.Favorite,
+            contentDescription = "Favorite",
+         )
+         Spacer(modifier = Modifier.width(8.dp))
+         Text("Suggestion Chip")
+      })
 
-    ElevatedSuggestionChip(onClick = { /*TODO*/ }, label = {
-      Icon(
-        modifier = Modifier
-          .width(18.dp)
-          .height(18.dp),
-        imageVector = Icons.Default.Favorite,
-        contentDescription = "Favorite",
-      )
-      Spacer(modifier = Modifier.width(8.dp))
-      Text("Suggestion Chip")
-    })
-  }
+      ElevatedSuggestionChip(onClick = { /*TODO*/ }, label = {
+         Icon(
+            modifier = Modifier
+              .width(18.dp)
+              .height(18.dp),
+            imageVector = Icons.Default.Favorite,
+            contentDescription = "Favorite",
+         )
+         Spacer(modifier = Modifier.width(8.dp))
+         Text("Suggestion Chip")
+      })
+   }
 }
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun FilterChipsExample() {
-  var selectedFilter by remember { mutableStateOf("First") }
+   var selectedFilter by remember { mutableStateOf("First") }
 
-  FlowRow(
-    horizontalArrangement = Arrangement.spacedBy(8.dp),
-    modifier = Modifier
-      .fillMaxWidth()
-      .padding(
-        start = 20.dp,
-        end = 20.dp
-      ),
-  ) {
-    FilterChip(
-      selected = selectedFilter == "First",
-      onClick = {
-                selectedFilter = "First"
-      },
-      label = {
-        Icon(
-          modifier = Modifier
-            .width(18.dp)
-            .height(18.dp),
-          imageVector = Icons.Default.AcUnit,
-          contentDescription = "Favorite",
-        )
-        Spacer(modifier = Modifier.width(8.dp))
-        Text("First")
-      }
-    )
+   FlowRow(
+      horizontalArrangement = Arrangement.spacedBy(8.dp),
+      modifier = Modifier
+        .fillMaxWidth()
+        .padding(
+          start = 20.dp,
+          end = 20.dp
+        ),
+   ) {
+      FilterChip(
+         selected = selectedFilter == "First",
+         onClick = {
+            selectedFilter = "First"
+         },
+         label = {
+            Icon(
+               modifier = Modifier
+                 .width(18.dp)
+                 .height(18.dp),
+               imageVector = Icons.Default.AcUnit,
+               contentDescription = "Favorite",
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Text("First")
+         }
+      )
 
-    FilterChip(
-      selected = selectedFilter == "Second",
-      onClick = {
-                selectedFilter = "Second"
-      },
-      label = {
-        Icon(
-          modifier = Modifier
-            .width(18.dp)
-            .height(18.dp),
-          imageVector = Icons.Default.AdsClick,
-          contentDescription = "Favorite",
-        )
-        Spacer(modifier = Modifier.width(8.dp))
-        Text("Second")
-      }
-    )
+      FilterChip(
+         selected = selectedFilter == "Second",
+         onClick = {
+            selectedFilter = "Second"
+         },
+         label = {
+            Icon(
+               modifier = Modifier
+                 .width(18.dp)
+                 .height(18.dp),
+               imageVector = Icons.Default.AdsClick,
+               contentDescription = "Favorite",
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Text("Second")
+         }
+      )
 
-    FilterChip(
-      selected = selectedFilter == "Third",
-      onClick = {
-                selectedFilter = "Third"
-      },
-      label = {
-        Icon(
-          modifier = Modifier
-            .width(18.dp)
-            .height(18.dp),
-          imageVector = Icons.Default.Api,
-          contentDescription = "Favorite",
-        )
-        Spacer(modifier = Modifier.width(8.dp))
-        Text("Third")
-      }
-    )
-  }
+      FilterChip(
+         selected = selectedFilter == "Third",
+         onClick = {
+            selectedFilter = "Third"
+         },
+         label = {
+            Icon(
+               modifier = Modifier
+                 .width(18.dp)
+                 .height(18.dp),
+               imageVector = Icons.Default.Api,
+               contentDescription = "Favorite",
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            Text("Third")
+         }
+      )
+   }
 }

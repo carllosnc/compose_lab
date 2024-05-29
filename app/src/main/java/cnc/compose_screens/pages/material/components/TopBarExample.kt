@@ -13,27 +13,27 @@ import androidx.compose.ui.unit.sp
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TopBarExample(
-        openDrawer: () -> Unit,
+   openDrawer: () -> Unit,
 ) {
-  TopAppBar(
-    navigationIcon = {
-      IconButton(onClick = {
-        openDrawer()
-      }) {
-        Icon(
-          imageVector = Icons.Default.Menu,
-          contentDescription = "Back",
-        )
+   TopAppBar(
+      navigationIcon = {
+         IconButton(onClick = {
+            openDrawer()
+         }) {
+            Icon(
+               imageVector = Icons.Default.Menu,
+               contentDescription = "Back",
+            )
+         }
+      },
+      actions = {
+         TopBarActionsExample()
+      },
+      title = {
+         Text(
+            "Compose Screens",
+            fontSize = 20.sp
+         )
       }
-    },
-    actions = {
-      TopBarActionsExample()
-    },
-    title = {
-      Text(
-        "Compose Screens",
-        fontSize = 20.sp
-      )
-    }
-  )
+   )
 }

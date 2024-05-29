@@ -16,29 +16,29 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun LoadingIndicatorsExample() {
-  Row(
-    horizontalArrangement = Arrangement.spacedBy(50.dp),
-    verticalAlignment = Alignment.CenterVertically,
-    modifier = Modifier
-      .fillMaxWidth()
-      .padding(
-        start = 20.dp,
-        end = 20.dp
-      ),
-  ) {
-    CircularProgressIndicator(
+   Row(
+      horizontalArrangement = Arrangement.spacedBy(50.dp),
+      verticalAlignment = Alignment.CenterVertically,
       modifier = Modifier
-        .width(40.dp)
-        .height(40.dp),
-      strokeWidth = 4.dp,
-      color = MaterialTheme.colorScheme.secondaryContainer,
-      trackColor = MaterialTheme.colorScheme.primary,
-    )
+        .fillMaxWidth()
+        .padding(
+          start = 20.dp,
+          end = 20.dp
+        ),
+   ) {
+      CircularProgressIndicator(
+         modifier = Modifier
+           .width(40.dp)
+           .height(40.dp),
+         strokeWidth = 4.dp,
+         color = MaterialTheme.colorScheme.secondaryContainer,
+         trackColor = MaterialTheme.colorScheme.primary,
+      )
 
-    LinearProgressIndicator(
-      modifier = Modifier.weight(1f),
-      color = MaterialTheme.colorScheme.secondaryContainer,
-      trackColor = MaterialTheme.colorScheme.primary,
-    )
-  }
+      LinearProgressIndicator(
+         modifier = Modifier.weight(1f),
+         color = MaterialTheme.colorScheme.secondaryContainer,
+         trackColor = MaterialTheme.colorScheme.primary,
+      )
+   }
 }

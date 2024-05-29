@@ -10,15 +10,15 @@ import androidx.compose.ui.graphics.Color
 
 @Composable
 fun FloatingButtonExample() {
-  FloatingActionButton(
-    onClick = { /*TODO*/ },
-    shape = CircleShape,
-    containerColor = Color(0xFF6650a4),
-    contentColor = Color.White,
-  ) {
-    Icon(
-      imageVector = Icons.Default.Add,
-      contentDescription = "Add",
-    )
-  }
+   FloatingActionButton(
+      onClick = { /*TODO*/ },
+      shape = CircleShape,
+      containerColor = Color(0xFF6650a4),
+      contentColor = Color.White,
+   ) {
+      Icon(
+         imageVector = Icons.Default.Add,
+         contentDescription = "Add",
+      )
+   }
 }

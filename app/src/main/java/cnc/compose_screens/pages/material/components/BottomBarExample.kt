@@ -15,59 +15,59 @@ import androidx.compose.runtime.Composable
 
 @Composable
 fun BottomBarExample() {
-  NavigationBar {
-    NavigationBarItem(
-      icon = {
-        Icon(
-          imageVector = Icons.Outlined.Home,
-          contentDescription = "Home",
-        )
-      },
-      label = { Text("Home") },
-      selected = true,
-      onClick = { /*TODO*/ }
-    )
+   NavigationBar {
+      NavigationBarItem(
+         icon = {
+            Icon(
+               imageVector = Icons.Outlined.Home,
+               contentDescription = "Home",
+            )
+         },
+         label = { Text("Home") },
+         selected = true,
+         onClick = { /*TODO*/ }
+      )
 
-    NavigationBarItem(
-      icon = {
-        Icon(
-          imageVector = Icons.Outlined.Search,
-          contentDescription = "Search",
-        )
-      },
-      label = { Text("Search") },
-      selected = false,
-      onClick = { /*TODO*/ }
-    )
+      NavigationBarItem(
+         icon = {
+            Icon(
+               imageVector = Icons.Outlined.Search,
+               contentDescription = "Search",
+            )
+         },
+         label = { Text("Search") },
+         selected = false,
+         onClick = { /*TODO*/ }
+      )
 
-    NavigationBarItem(
-      icon = {
-        Icon(
-          imageVector = Icons.Outlined.Settings,
-          contentDescription = "Settings",
-        )
-      },
-      label = { Text("Settings") },
-      selected = false,
-      onClick = { /*TODO*/ }
-    )
+      NavigationBarItem(
+         icon = {
+            Icon(
+               imageVector = Icons.Outlined.Settings,
+               contentDescription = "Settings",
+            )
+         },
+         label = { Text("Settings") },
+         selected = false,
+         onClick = { /*TODO*/ }
+      )
 
-    NavigationBarItem(
-      icon = {
-        BadgedBox(badge = {
-          Badge {
-            Text("10")
-          }
-        }) {
-          Icon(
-            imageVector = Icons.Outlined.ShoppingCart,
-            contentDescription = "Products",
-          )
-        }
-      },
-      label = { Text("Products") },
-      selected = false,
-      onClick = { /*TODO*/ }
-    )
-  }
+      NavigationBarItem(
+         icon = {
+            BadgedBox(badge = {
+               Badge {
+                  Text("10")
+               }
+            }) {
+               Icon(
+                  imageVector = Icons.Outlined.ShoppingCart,
+                  contentDescription = "Products",
+               )
+            }
+         },
+         label = { Text("Products") },
+         selected = false,
+         onClick = { /*TODO*/ }
+      )
+   }
 }

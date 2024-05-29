@@ -12,27 +12,27 @@ import androidx.compose.ui.Alignment
 
 @Composable
 fun TopBarActionsExample() {
-  Row(
-    verticalAlignment = Alignment.CenterVertically,
-  ) {
+   Row(
+      verticalAlignment = Alignment.CenterVertically,
+   ) {
 
-    IconButton(onClick = {}) {
-      Icon(
-        imageVector = Icons.Default.Translate,
-        contentDescription = "Back",
-      )
-    }
-    IconButton(onClick = { /*TODO*/ }) {
-      Icon(
-        imageVector = Icons.Default.Search,
-        contentDescription = "Back",
-      )
-    }
-    IconButton(onClick = { /*TODO*/ }) {
-      Icon(
-        imageVector = Icons.Default.Add,
-        contentDescription = "Back",
-      )
-    }
-  }
+      IconButton(onClick = {}) {
+         Icon(
+            imageVector = Icons.Default.Translate,
+            contentDescription = "Back",
+         )
+      }
+      IconButton(onClick = { /*TODO*/ }) {
+         Icon(
+            imageVector = Icons.Default.Search,
+            contentDescription = "Back",
+         )
+      }
+      IconButton(onClick = { /*TODO*/ }) {
+         Icon(
+            imageVector = Icons.Default.Add,
+            contentDescription = "Back",
+         )
+      }
+   }
 }
