@@ -22,14 +22,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import cnc.compose_screens.pages.material.components.AlertDialogExample
 import cnc.compose_screens.pages.material.components.AssistChipsExample
 import cnc.compose_screens.pages.material.components.BottomBarExample
 import cnc.compose_screens.pages.material.components.ButtonsExample
 import cnc.compose_screens.pages.material.components.CardExample
 import cnc.compose_screens.pages.material.components.DrawerContentExample
+import cnc.compose_screens.pages.material.components.DropDownMenuExample
 import cnc.compose_screens.pages.material.components.FilterChipsExample
 import cnc.compose_screens.pages.material.components.FloatingButtonExample
 import cnc.compose_screens.pages.material.components.IconButtonsExample
+import cnc.compose_screens.pages.material.components.ImageExample
 import cnc.compose_screens.pages.material.components.ListItemExample
 import cnc.compose_screens.pages.material.components.LoadingIndicatorsExample
 import cnc.compose_screens.pages.material.components.SuggestionChipsExample
@@ -113,6 +116,11 @@ fun MaterialPage(
                   HorizontalDivider()
                   FilterChipsExample()
                   HorizontalDivider()
+                  ImageExample()
+                  HorizontalDivider()
+                  AlertDialogExample()
+                  HorizontalDivider()
+                  DropDownMenuExample()
                }
             }
          },

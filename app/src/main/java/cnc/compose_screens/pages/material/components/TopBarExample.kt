@@ -31,7 +31,7 @@ fun TopBarExample(
       },
       title = {
          Text(
-            "Compose Screens",
+            "M3 Components",
             fontSize = 20.sp
          )
       }

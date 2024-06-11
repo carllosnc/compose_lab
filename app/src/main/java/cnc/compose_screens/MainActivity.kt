@@ -9,7 +9,6 @@ import androidx.compose.animation.core.tween
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-
 import cnc.compose_screens.pages.HomePage
 import cnc.compose_screens.pages.material.MaterialPage
 import cnc.compose_screens.pages.reactivity.ReactivityPage
@@ -19,9 +18,10 @@ import cnc.compose_screens.ui.theme.Compose_screensTheme
 class MainActivity : ComponentActivity() {
    override fun onCreate(savedInstanceState: Bundle?) {
       super.onCreate(savedInstanceState)
-      enableEdgeToEdge()
-      setContent {
 
+      enableEdgeToEdge()
+
+      setContent {
          val navController = rememberNavController()
 
          Compose_screensTheme(
@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
          ) {
             NavHost(
                navController = navController,
-               startDestination = Routes.HOME,
+               startDestination = Routes.MATERIAL_SCREEN,
                enterTransition = {
                   slideIntoContainer(
                      AnimatedContentTransitionScope.SlideDirection.Start,

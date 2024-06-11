@@ -48,7 +48,7 @@ fun CardExample() {
                fontWeight = FontWeight.Bold
             )
             Text(
-               text = "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
+               text = "Reference site about Lorem Ipsum, giving information on its origins, as well as a random ipsum generator.",
                fontSize = 14.sp,
             )
          }
@@ -76,7 +76,7 @@ fun CardExample() {
                fontWeight = FontWeight.Bold
             )
             Text(
-               text = "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
+               text = "Reference site about Lorem Ipsum, giving information on its origins, as well as a random ipsum generator.",
                fontSize = 14.sp,
             )
          }
