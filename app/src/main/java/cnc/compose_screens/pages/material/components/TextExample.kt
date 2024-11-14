@@ -16,11 +16,11 @@ import androidx.compose.ui.unit.sp
 fun TextExample() {
    Column(
       modifier = Modifier
-        .fillMaxWidth()
-        .padding(
-          start = 20.dp,
-          end = 20.dp
-        ),
+         .fillMaxWidth()
+         .padding(
+            start = 20.dp,
+            end = 20.dp
+         ),
       verticalArrangement = Arrangement.spacedBy(
          space = 2.dp
       )

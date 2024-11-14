@@ -20,6 +20,7 @@ import cnc.compose_screens.pages.reactivity.components.DerivedStateExample
 import cnc.compose_screens.pages.reactivity.components.MutableStateExample
 import cnc.compose_screens.pages.reactivity.components.SharingStateExample
 import cnc.compose_screens.pages.reactivity.components.SideEffectsExample
+import cnc.compose_screens.pages.reactivity.components.ViewModelExample
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -52,6 +53,7 @@ fun ReactivityPage(
                HorizontalDivider()
                SideEffectsExample()
                HorizontalDivider()
+               ViewModelExample()
             }
          }
       }
