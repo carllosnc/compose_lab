@@ -10,6 +10,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import cnc.compose_screens.pages.HomePage
+import cnc.compose_screens.pages.examples.PhoneProfilePage
 import cnc.compose_screens.pages.material.MaterialPage
 import cnc.compose_screens.pages.reactivity.ReactivityPage
 import cnc.compose_screens.settings.Routes
@@ -63,6 +64,9 @@ class MainActivity : ComponentActivity() {
                }
                composable(Routes.REACTIVITY_SCREEN) {
                   ReactivityPage(navController = navController)
+               }
+               composable(Routes.PHONE_PROFILE_SCREEN){
+                  PhoneProfilePage(navController = navController)
                }
             }
          }

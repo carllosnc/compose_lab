@@ -28,7 +28,7 @@ fun ListItemExample() {
             Text("List item Example")
          },
          overlineContent = {
-            Text("Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.")
+            Text("Reference site about Lorem Ipsum, giving information on its origins, as well as a random ipsum generator.")
          },
          leadingContent = {
             FilledIconButton(onClick = { /*TODO*/ }) {
@@ -48,7 +48,7 @@ fun ListItemExample() {
             Text("List item Example")
          },
          supportingContent = {
-            Text("Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.")
+            Text("Reference site about Lorem Ipsum, giving information on its origins, as well as a random ipsum generator.")
          },
          leadingContent = {
             OutlinedIconButton(onClick = { /*TODO*/ }) {

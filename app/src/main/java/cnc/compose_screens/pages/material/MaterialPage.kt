@@ -42,11 +42,6 @@ import cnc.compose_screens.pages.material.components.TopBarExample
 import kotlinx.coroutines.launch
 
 @Composable
-@Preview(
-   showBackground = true,
-   showSystemUi = true,
-   device = androidx.compose.ui.tooling.preview.Devices.PIXEL,
-)
 fun MaterialPage(
    navController: NavController = rememberNavController()
 ) {
