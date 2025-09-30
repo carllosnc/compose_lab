@@ -10,6 +10,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Android
 import androidx.compose.material.icons.outlined.ChevronRight
+import androidx.compose.material.icons.outlined.Notifications
 import androidx.compose.material.icons.outlined.PhoneEnabled
 import androidx.compose.material.icons.outlined.TouchApp
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -63,6 +64,11 @@ fun HomePage(
                   onClick = { navController.navigate(Routes.PHONE_PROFILE_SCREEN) },
                   text = "Phone Profile",
                   icon = Icons.Outlined.PhoneEnabled
+               )
+               MenuItem(
+                  onClick = { navController.navigate(Routes.LOCAL_NOTIFICATION) },
+                  text = "Local notifications",
+                  icon = Icons.Outlined.Notifications
                )
             }
          }
