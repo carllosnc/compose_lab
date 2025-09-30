@@ -10,6 +10,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import cnc.compose_screens.pages.HomePage
+import cnc.compose_screens.pages.examples.LocalNotificationPage
 import cnc.compose_screens.pages.examples.PhoneProfilePage
 import cnc.compose_screens.pages.material.MaterialPage
 import cnc.compose_screens.pages.reactivity.ReactivityPage
@@ -30,7 +31,7 @@ class MainActivity : ComponentActivity() {
          ) {
             NavHost(
                navController = navController,
-               startDestination = Routes.HOME,
+               startDestination = Routes.LOCAL_NOTIFICATION,
                enterTransition = {
                   slideIntoContainer(
                      AnimatedContentTransitionScope.SlideDirection.Start,
@@ -65,8 +66,11 @@ class MainActivity : ComponentActivity() {
                composable(Routes.REACTIVITY_SCREEN) {
                   ReactivityPage(navController = navController)
                }
-               composable(Routes.PHONE_PROFILE_SCREEN){
+               composable(Routes.PHONE_PROFILE_SCREEN) {
                   PhoneProfilePage(navController = navController)
+               }
+               composable(Routes.LOCAL_NOTIFICATION) {
+                  LocalNotificationPage(navController = navController)
                }
             }
          }
