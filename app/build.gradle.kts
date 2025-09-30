@@ -40,7 +40,7 @@ android {
       compose = true
    }
    composeOptions {
-      kotlinCompilerExtensionVersion = "1.5.1"
+      kotlinCompilerExtensionVersion = "1.5.15"
    }
    packaging {
       resources {
@@ -63,6 +63,7 @@ dependencies {
    implementation(libs.androidx.ui.tooling.preview)
    implementation(libs.androidx.material3)
    implementation(libs.material.icons.extended)
+   implementation(libs.androidx.compiler)
 
    testImplementation(libs.junit)
 
@@ -73,4 +74,17 @@ dependencies {
 
    debugImplementation(libs.androidx.ui.tooling)
    debugImplementation(libs.androidx.ui.test.manifest)
+
+   modules {
+      module("com.google.guava:listenablefuture") {
+         replacedBy("com.google.guava:guava", "listenablefuture is part of guava")
+      }
+   }
+
+}
+
+configurations.all {
+   resolutionStrategy.capabilitiesResolution.withCapability("com.google.guava:listenablefuture") {
+      select("com.google.guava:guava:0")
+   }
 }
