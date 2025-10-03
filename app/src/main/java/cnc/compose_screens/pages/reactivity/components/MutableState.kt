@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun MutableStateExample() {
+
    var count by remember { mutableIntStateOf(0) }
 
    Column(

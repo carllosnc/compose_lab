@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun SharingStateExample() {
+
    val count = remember { mutableIntStateOf(0) }
 
    Column(
